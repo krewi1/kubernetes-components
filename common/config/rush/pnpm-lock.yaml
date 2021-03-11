@@ -1,0 +1,13 @@
+dependencies:
+  '@rush-temp/metallb': file:projects/metallb.tgz
+lockfileVersion: 5.2
+packages:
+  file:projects/metallb.tgz:
+    dev: false
+    name: '@rush-temp/metallb'
+    resolution:
+      integrity: sha512-NbkHY22u9LaKRNxyXNlFXOiFXOWF8xM8x47D3WwyOBTM2b0Sl+zC7gcbNAs3WIKRzFK35ZCrutvRC9O654YdEA==
+      tarball: file:projects/metallb.tgz
+    version: 0.0.0
+specifiers:
+  '@rush-temp/metallb': file:./projects/metallb.tgz
