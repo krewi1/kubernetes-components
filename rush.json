@@ -438,7 +438,7 @@
     // },
     //
     {
-      "packageName": "@krewi/metallb",
+      "packageName": "@sttorg/metallb",
       "projectFolder": "networking/metallb"
     }
     //
