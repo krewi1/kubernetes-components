@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@pulumi/kubernetes": "2.7.8",
+    "@pulumi/pulumi": "^2.22.0"
+  }
 }
