@@ -2,9 +2,12 @@
   "name": "@sttorg/metallb",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean & npm run compile",
+    "watch": "tsc -w",
+    "compile": "tsc",
+    "clean": "tsc --build --clean"
   },
   "keywords": [],
   "author": "",
