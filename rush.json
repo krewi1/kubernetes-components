@@ -439,7 +439,8 @@
     //
     {
       "packageName": "@sttorg/metallb",
-      "projectFolder": "networking/metallb"
+      "projectFolder": "networking/metallb",
+      "shouldPublish": true
     }
     //
     // {

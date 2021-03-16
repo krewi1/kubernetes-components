@@ -1,0 +1,17 @@
+{
+  "name": "@sttorg/metallb",
+  "entries": [
+    {
+      "version": "1.0.2",
+      "tag": "@sttorg/metallb_v1.0.2",
+      "date": "Tue, 16 Mar 2021 15:26:47 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add comment to metallb component"
+          }
+        ]
+      }
+    }
+  ]
+}
