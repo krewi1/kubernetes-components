@@ -12,6 +12,9 @@ interface AddressPool {
 }
 
 interface MetalLbProps {
+  /**
+   * Layer2 config or BGP config once in future
+   */
   config: Layer2Config;
 }
 
