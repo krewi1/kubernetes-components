@@ -441,6 +441,11 @@
       "packageName": "@sttorg/metallb",
       "projectFolder": "networking/metallb",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@sttorg/nginx-controller",
+      "projectFolder": "networking/nginx-ingress",
+      "shouldPublish": true
     }
     //
     // {

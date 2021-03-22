@@ -395,19 +395,26 @@ export class MetalLb extends pulumi.ComponentResource {
       },
     });
 
-    const memberlistSecret = new k8s.core.v1.Secret("memberlist", {
-      metadata: {
-        namespace: namespace.metadata.name,
+    const memberlistSecret = new k8s.core.v1.Secret(
+      "memberlist",
+      {
+        metadata: {
+          name: "memberlist",
+          namespace: namespace.metadata.name,
+        },
+        stringData: {
+          secretkey: randomBytes(128).toString("base64"),
+        },
       },
-      stringData: {
-        secretkey: randomBytes(128).toString("base64"),
-      },
-    });
+      {
+        ignoreChanges: ["stringData"],
+      }
+    );
 
     const configuration = new k8s.core.v1.ConfigMap("metallb-config", {
       metadata: {
         namespace: namespace.metadata.name,
-        name: "metallb-config",
+        name: "config",
       },
       data: {
         config: JSON.stringify({

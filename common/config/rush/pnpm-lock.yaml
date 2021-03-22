@@ -2,6 +2,7 @@ dependencies:
   '@pulumi/kubernetes': 2.7.8
   '@pulumi/pulumi': 2.22.0
   '@rush-temp/metallb': file:projects/metallb.tgz
+  '@rush-temp/nginx-controller': file:projects/nginx-controller.tgz
 lockfileVersion: 5.2
 packages:
   /@grpc/grpc-js/1.2.11:
@@ -71,6 +72,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-ebk1ZtlvVG9MHm+WTVkJsoACwgYwoWN08RYXHiNX9SBxm7Zzp//dPPma9dDxGE6JXFOZvowx4/KLjErGA529vg==
+      tarball: '@pulumi/kubernetes/-/kubernetes-2.7.8.tgz'
   /@pulumi/pulumi/2.22.0:
     dependencies:
       '@grpc/grpc-js': 1.2.11
@@ -938,8 +940,19 @@ packages:
       integrity: sha512-EilOsruxyZgghABobHgFD4B49LDA0sQiSlRtfNYgFINstbpSpARSc86PzMA+XLFy1GMagMnVnvh9nvDUjIRBgQ==
       tarball: file:projects/metallb.tgz
     version: 0.0.0
+  file:projects/nginx-controller.tgz:
+    dependencies:
+      '@pulumi/kubernetes': 2.7.8
+      '@pulumi/pulumi': 2.22.0
+    dev: false
+    name: '@rush-temp/nginx-controller'
+    resolution:
+      integrity: sha512-WKYyRaE/lvG+MzAn3XiTDdRafFEpb/fQ7/2/ttJvmO4sp2F9BiMQho6mAIogWaAeS1iGSutThdaKtJLSVgecMw==
+      tarball: file:projects/nginx-controller.tgz
+    version: 0.0.0
 registry: ''
 specifiers:
   '@pulumi/kubernetes': 2.7.8
   '@pulumi/pulumi': ^2.22.0
   '@rush-temp/metallb': file:./projects/metallb.tgz
+  '@rush-temp/nginx-controller': file:./projects/nginx-controller.tgz
