@@ -1,0 +1,23 @@
+{
+  "name": "@sttorg/nginx-controller",
+  "entries": [
+    {
+      "version": "1.0.2",
+      "tag": "@sttorg/nginx-controller_v1.0.2",
+      "date": "Mon, 22 Mar 2021 15:48:53 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "new version"
+          },
+          {
+            "comment": "test"
+          },
+          {
+            "comment": "test"
+          }
+        ]
+      }
+    }
+  ]
+}
